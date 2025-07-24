@@ -1,0 +1,18 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.30"
+fs_permissions = [{ access = "read", path = "./"}]
+
+[profile.wallets]
+PRIVATE_KEY = "${PRIVATE_KEY}" 
+
+[rpc_endpoints]
+baseSepolia = "${BASE_SEPOLIA_RPC}"
+
+[etherscan]
+baseSepolia = { key = "${ETHERSCAN_API_KEY}" }
+
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
